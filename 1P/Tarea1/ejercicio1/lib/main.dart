@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:ej1_conversion/view/conversion_view.dart';
 import 'view/conversion_view.dart';
-
 
 void main() {
   runApp(MiAplicacion());

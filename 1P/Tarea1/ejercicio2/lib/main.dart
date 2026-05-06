@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
 // Importa aquí el archivo donde creaste tu ConversionPage
-import 'package:ej2_memoria/view/memoria_view.dart';
 import 'view/memoria_view.dart';
-
 
 void main() {
   runApp(Conversordememoria());
