@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
+    <exclude-output />
+    <content url="file://$MODULE_DIR$">
+      <excludeFolder url="file://$MODULE_DIR$/Tarea1/ejercicio1/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/Tarea1/ejercicio1/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/Tarea1/ejercicio1/build" />
+      <excludeFolder url="file://$MODULE_DIR$/Tarea1/ejercicio2/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/Tarea1/ejercicio2/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/Tarea1/ejercicio2/build" />
+      <excludeFolder url="file://$MODULE_DIR$/Tarea1/ejercicio3/pry_compania_seguros/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/Tarea1/ejercicio3/pry_compania_seguros/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/Tarea1/ejercicio3/pry_compania_seguros/build" />
+      <excludeFolder url="file://$MODULE_DIR$/Tarea1/ejercicio4/pry_incentivos/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/Tarea1/ejercicio4/pry_incentivos/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/Tarea1/ejercicio4/pry_incentivos/build" />
+      <excludeFolder url="file://$MODULE_DIR$/Tarea1/ejercicio5/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/Tarea1/ejercicio5/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/Tarea1/ejercicio5/build" />
+      <excludeFolder url="file://$MODULE_DIR$/pry_laboratorio2/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/pry_laboratorio2/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/pry_laboratorio2/build" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+</module>
