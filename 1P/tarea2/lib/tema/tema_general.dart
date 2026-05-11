@@ -1,11 +1,16 @@
 import 'package:flutter/material.dart';
-import 'index.dart';
+import 'esquema_color.dart';
+import 'tema_fondo.dart';
+import 'tema_botones.dart';
+import 'tema_formularios.dart';
+import 'tema_tipografia.dart';
 
 class TemaGeneral {
   static ThemeData get temaClaro {
     return ThemeData(
-      useMaterial3: true, //para el diseño material you
+      useMaterial3: true,
       brightness: Brightness.light,
+
       colorScheme: ColorScheme.fromSeed(
         seedColor: ColoresApp.primario,
         background: TemaFondo.fondoClaro,
@@ -13,23 +18,27 @@ class TemaGeneral {
         primary: ColoresApp.primario,
         secondary: ColoresApp.secundario,
       ),
+
       scaffoldBackgroundColor: TemaFondo.fondoClaro,
-      appBarTheme: AppBarTheme(
+
+      textTheme: TipografiaApp.texto,
+
+      appBarTheme: const AppBarTheme(
         backgroundColor: TemaFondo.fondoClaro,
         foregroundColor: ColoresApp.textPrincipal,
         elevation: 0,
         centerTitle: true,
         titleTextStyle: TextStyle(
-            color: ColoresApp.textPrincipal,
-            fontSize: 22,
-            fontWeight: FontWeight.w600
+          color: ColoresApp.textPrincipal,
+          fontSize: 22,
+          fontWeight: FontWeight.w600,
         ),
       ),
+
       cardTheme: TemaFondo.tarjetaClara,
       elevatedButtonTheme: TemaBotones.botonPrincipal,
       outlinedButtonTheme: TemaBotones.botonSecundario,
       inputDecorationTheme: TemaFormulario.campoTexto,
     );
   }
-
 }

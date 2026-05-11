@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import '../moleculas/m_tarjeta_menu.dart';
 import '../../tema/tema_fondo.dart';
+import 'package:tarea2/vistas/paginas/servicios_pagina.dart';
 
 class MenuPagina extends StatelessWidget {
   const MenuPagina({super.key});
