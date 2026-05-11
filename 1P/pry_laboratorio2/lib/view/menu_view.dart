@@ -1,7 +1,4 @@
 import 'package:flutter/material.dart';
-
-// --- MOLÉCULA: Opción de Menú ---
-// Representa cada botón que nos llevará a un ejercicio
 class MOpcionMenu extends StatelessWidget {
   final String titulo;
   final String subtitulo;
@@ -41,15 +38,12 @@ class MOpcionMenu extends StatelessWidget {
         ),
         trailing: const Icon(Icons.arrow_forward_ios, color: Colors.grey),
         onTap: () {
-          // Aquí aplicamos la navegación PushNamed que investigaste
           Navigator.pushNamed(context, ruta);
         },
       ),
     );
   }
 }
-
-// --- PÁGINA: Menú Principal ---
 class MenuView extends StatelessWidget {
   const MenuView({super.key});
 
@@ -74,26 +68,20 @@ class MenuView extends StatelessWidget {
               style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold, color: Colors.black87),
             ),
           ),
-
-          // Ejercicio 4.10
           const MOpcionMenu(
-            titulo: 'Ejercicio 4.10',
-            subtitulo: 'Promedio de edades por salón y escuela.',
+            titulo: 'Ejercicio 2',
+            subtitulo: 'Promedio de edades por salon y escuela.',
             icono: Icons.school,
             ruta: '/ejercicio410',
             colorTema: miColor,
           ),
-
-          // Ejercicio 4.12 (Añadido preventivamente para cuando lo enlacemos en main.dart)
           MOpcionMenu(
-            titulo: 'Ejercicio 4.12',
+            titulo: 'Ejercicio 3',
             subtitulo: 'Total de dinero en caja registradora.',
             icono: Icons.point_of_sale,
-            ruta: '/ejercicio412', // Esta ruta la agregaremos luego al main.dart
+            ruta: '/ejercicio412',
             colorTema: Colors.green.shade700,
           ),
-
-          // Aquí podrás añadir el 4.9 u otros fácilmente copiando y pegando la molécula
         ],
       ),
     );

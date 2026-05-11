@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-// Importaremos las vistas cuando las tengamos creadas
  import 'view/splash_view.dart';
  import 'view/menu_view.dart';
  import 'view/escuela/escuela_view.dart';
@@ -16,7 +15,6 @@ class MyApp extends StatelessWidget {
       title: 'Laboratorio 2',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(primarySwatch: Colors.indigo),
-      // Definición de rutas
       initialRoute: '/',
       routes: {
         '/': (context) => const SplashView(),

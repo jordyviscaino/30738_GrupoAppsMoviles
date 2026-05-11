@@ -15,7 +15,7 @@ class BotonCajaGrande extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      width: double.infinity, // Ocupa todo el ancho disponible
+      width: double.infinity,
       height: 60,
       child: ElevatedButton.icon(
         onPressed: alPresionar,

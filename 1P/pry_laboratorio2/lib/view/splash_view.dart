@@ -7,12 +7,10 @@ class SplashView extends StatefulWidget {
   @override
   State<SplashView> createState() => _SplashViewState();
 }
-
 class _SplashViewState extends State<SplashView> {
   @override
   void initState() {
     super.initState();
-    // Temporizador para navegar al menú después de 3 segundos
     Timer(const Duration(seconds: 3), () {
       Navigator.pushReplacementNamed(context, '/menu');
     });
@@ -21,7 +19,7 @@ class _SplashViewState extends State<SplashView> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: const Color(0xFF1E28E9), // Tu color corporativo
+      backgroundColor: const Color(0xFF1E28E9),
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
@@ -29,7 +27,7 @@ class _SplashViewState extends State<SplashView> {
             const Icon(Icons.school, size: 100, color: Colors.white),
             const SizedBox(height: 20),
             const Text(
-              "LABORATORIO 2",
+              "DEBER 1.2",
               style: TextStyle(
                 color: Colors.white,
                 fontSize: 24,

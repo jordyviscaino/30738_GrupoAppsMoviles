@@ -60,7 +60,6 @@ class _CajaViewState extends State<CajaView> {
       appBar: AppBar(title: const Text('Arqueo de Caja'), backgroundColor: miColor, foregroundColor: Colors.white),
       body: Column(
         children: [
-          // Pantalla de Total
           Container(
             padding: const EdgeInsets.all(25),
             decoration: BoxDecoration(
@@ -78,7 +77,6 @@ class _CajaViewState extends State<CajaView> {
             ),
           ),
 
-          // Lista de entradas (Widget Externo)
           Expanded(
             child: ListView.builder(
               padding: const EdgeInsets.all(15),
@@ -92,7 +90,6 @@ class _CajaViewState extends State<CajaView> {
             ),
           ),
 
-          // Botones de Acción (Widget Externo)
           Padding(
             padding: const EdgeInsets.all(20),
             child: Column(
@@ -106,7 +103,6 @@ class _CajaViewState extends State<CajaView> {
                 ),
                 const SizedBox(height: 10),
 
-                // USAMOS EL NUEVO BOTÓN GRANDE
                 BotonCajaGrande(
                   texto: "CALCULAR TOTAL",
                   alPresionar: _procesarCaja,

@@ -1,12 +1,8 @@
-// Ruta: lib/views/escuela/escuela_view.dart
 import 'package:flutter/material.dart';
-// 1. Importamos desde las carpetas específicas
 import '../../model/escuela/escuela_model.dart';
 import '../../controllers/escuela/escuela_controller.dart';
-// 2. Importamos los widgets compartidos
 import '../../widgets/shared/shared_widgets.dart';
 
-// Molécula específica para esta vista
 class MSalonInput extends StatelessWidget {
   final TextEditingController controlador;
   final int indice;
@@ -72,7 +68,7 @@ class _EscuelaVistaState extends State<EscuelaVista> {
   }
 
   void _ejecutarCalculo() {
-    FocusScope.of(context).unfocus(); // Ocultar teclado
+    FocusScope.of(context).unfocus();
     List<String> inputs = _controllers.map((c) => c.text).toList();
     final respuesta = _controllerBusqueda.procesar(inputs);
 
@@ -91,7 +87,6 @@ class _EscuelaVistaState extends State<EscuelaVista> {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        // --- ZONA SUPERIOR: RESULTADOS (TIPO HISTORIAL DE CHAT) ---
         Expanded(
           child: ListView(
             padding: const EdgeInsets.all(8.0),
@@ -131,8 +126,6 @@ class _EscuelaVistaState extends State<EscuelaVista> {
             ],
           ),
         ),
-
-        // --- ZONA INFERIOR: ENTRADA DE DATOS (TIPO BARRA DE CHAT) ---
         Container(
           padding: const EdgeInsets.all(10),
           decoration: BoxDecoration(
@@ -140,9 +133,8 @@ class _EscuelaVistaState extends State<EscuelaVista> {
             boxShadow: [BoxShadow(color: Colors.black.withOpacity(0.05), blurRadius: 10, offset: const Offset(0, -5))],
           ),
           child: Column(
-            mainAxisSize: MainAxisSize.min, // Se adapta al contenido
+            mainAxisSize: MainAxisSize.min,
             children: [
-              // Lista de TextFields (limitada en altura para no cubrir toda la pantalla si hay muchos salones)
               ConstrainedBox(
                 constraints: BoxConstraints(maxHeight: MediaQuery.of(context).size.height * 0.3),
                 child: ListView.builder(
@@ -157,13 +149,12 @@ class _EscuelaVistaState extends State<EscuelaVista> {
                 ),
               ),
               const SizedBox(height: 5),
-              // Controles inferiores
               Row(
                 children: [
                   TextButton.icon(
                     onPressed: _agregarSalon,
                     icon: const Icon(Icons.add),
-                    label: const Text("Añadir Salón"),
+                    label: const Text("Agregar Salon"),
                     style: TextButton.styleFrom(foregroundColor: widget.colorTema),
                   ),
                   const Spacer(),

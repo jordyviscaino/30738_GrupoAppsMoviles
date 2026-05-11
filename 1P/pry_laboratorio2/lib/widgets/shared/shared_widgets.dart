@@ -1,7 +1,6 @@
-// Ruta: lib/widgets/shared_widgets.dart
 import 'package:flutter/material.dart';
 
-// --- ÁTOMOS ---
+
 
 class ATextField extends StatelessWidget {
   final TextEditingController controlador;
@@ -58,13 +57,12 @@ class ABoton extends StatelessWidget {
       child: CircleAvatar(
         radius: 25,
         backgroundColor: colorBoton,
-        child: const Icon(Icons.send, color: Colors.white), // Ícono tipo enviar mensaje
+        child: const Icon(Icons.send, color: Colors.white),
       ),
     );
   }
 }
 
-// --- MOLÉCULAS COMPARTIDAS ---
 
 class MResultados extends StatelessWidget {
   final String titulo;
