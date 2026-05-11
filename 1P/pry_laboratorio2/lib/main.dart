@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
- import 'view/splash_view.dart';
- import 'view/menu_view.dart';
- import 'view/escuela/escuela_view.dart';
+import 'view/splash_view.dart';
+import 'view/menu_view.dart';
+import 'view/escuela/escuela_view.dart';
 import 'view/caja/caja_view.dart';
+import 'package:pry_laboratorio2/view/inversion/inversion_view.dart';
 
 void main() => runApp(const MyApp());
 
@@ -20,7 +21,8 @@ class MyApp extends StatelessWidget {
         '/': (context) => const SplashView(),
         '/menu': (context) => const MenuView(),
         '/ejercicio410': (context) => const EscuelaView(),
-         '/ejercicio412': (context) => const CajaView(),
+        '/ejercicio412': (context) => const CajaView(),
+        '/ejercicio409': (context) => const InversionView(),
       },
     );
   }

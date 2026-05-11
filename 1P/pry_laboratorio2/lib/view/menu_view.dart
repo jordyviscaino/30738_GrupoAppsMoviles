@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+
 class MOpcionMenu extends StatelessWidget {
   final String titulo;
   final String subtitulo;
@@ -22,7 +23,10 @@ class MOpcionMenu extends StatelessWidget {
       margin: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(15)),
       child: ListTile(
-        contentPadding: const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
+        contentPadding: const EdgeInsets.symmetric(
+          horizontal: 20,
+          vertical: 10,
+        ),
         leading: CircleAvatar(
           backgroundColor: colorTema.withOpacity(0.1),
           radius: 25,
@@ -44,6 +48,7 @@ class MOpcionMenu extends StatelessWidget {
     );
   }
 }
+
 class MenuView extends StatelessWidget {
   const MenuView({super.key});
 
@@ -65,7 +70,11 @@ class MenuView extends StatelessWidget {
             padding: EdgeInsets.symmetric(horizontal: 20, vertical: 10),
             child: Text(
               "Selecciona un ejercicio:",
-              style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold, color: Colors.black87),
+              style: TextStyle(
+                fontSize: 18,
+                fontWeight: FontWeight.bold,
+                color: Colors.black87,
+              ),
             ),
           ),
           const MOpcionMenu(
@@ -81,6 +90,13 @@ class MenuView extends StatelessWidget {
             icono: Icons.point_of_sale,
             ruta: '/ejercicio412',
             colorTema: Colors.green.shade700,
+          ),
+          MOpcionMenu(
+            titulo: "Ejercicio 4.9",
+            subtitulo: "Inversión con depósito mensual e interés anual.",
+            icono: Icons.savings,
+            ruta: "/ejercicio409",
+            colorTema: Colors.purple.shade700,
           ),
         ],
       ),
