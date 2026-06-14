@@ -1,11 +1,8 @@
-import 'dart:ffi';
-
 import 'package:flutter/material.dart';
 import '../controller/conversion_controller.dart';
 import '../model/conversion_model.dart';
 
 
-//Caja de texto - Atomo
 
 class ATextField extends StatelessWidget{
 
