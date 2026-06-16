@@ -12,6 +12,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Aplicación de incentivos',
+      debugShowCheckedModeBanner: false,
       home: IncentivosPage(),
     );
   }

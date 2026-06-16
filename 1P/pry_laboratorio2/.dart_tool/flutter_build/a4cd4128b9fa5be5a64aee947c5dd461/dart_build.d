@@ -1,0 +1,1 @@
+ /home/effy/7moSemestre/devAppsMobile/30738_GrupoAppsMoviles/1P/pry_laboratorio2/.dart_tool/flutter_build/a4cd4128b9fa5be5a64aee947c5dd461/dart_build_result.json: 

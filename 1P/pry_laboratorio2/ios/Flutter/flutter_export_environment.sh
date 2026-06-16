@@ -1,9 +1,10 @@
 #!/bin/sh
 # This is a generated file; do not edit or check into version control.
-export "FLUTTER_ROOT=D:\ESPE 6\MOVILES\SDK\flutter_windows_3.41.6-stable\flutter"
-export "FLUTTER_APPLICATION_PATH=D:\ESPE 6\MOVILES\Apps\Lab 2\pry_laboratorio2"
+export "FLUTTER_ROOT=/home/effy/flutter"
+export "FLUTTER_APPLICATION_PATH=/home/effy/7moSemestre/devAppsMobile/30738_GrupoAppsMoviles/1P/pry_laboratorio2"
+export "FLUTTER_FRAMEWORK_SWIFT_PACKAGE_PATH=/home/effy/7moSemestre/devAppsMobile/30738_GrupoAppsMoviles/1P/pry_laboratorio2/ios/Flutter/ephemeral/Packages/.packages/FlutterFramework"
 export "COCOAPODS_PARALLEL_CODE_SIGN=true"
-export "FLUTTER_TARGET=lib\main.dart"
+export "FLUTTER_TARGET=lib/main.dart"
 export "FLUTTER_BUILD_DIR=build"
 export "FLUTTER_BUILD_NAME=1.0.0"
 export "FLUTTER_BUILD_NUMBER=1"

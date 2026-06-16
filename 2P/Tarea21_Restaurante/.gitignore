@@ -1,0 +1,24 @@
+# Node.js / Backend
+backend/node_modules/
+backend/.env
+backend/npm-debug.log*
+backend/yarn-debug.log*
+backend/yarn-error.log*
+
+# Flutter / Dart
+pry_tarea_consumo_apis/.dart_tool/
+pry_tarea_consumo_apis/build/
+pry_tarea_consumo_apis/.flutter-plugins
+pry_tarea_consumo_apis/.flutter-plugins-dependencies
+pry_tarea_consumo_apis/.packages
+
+# VS Code / IDE
+.vscode/
+.idea/
+
+# Sistema
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
