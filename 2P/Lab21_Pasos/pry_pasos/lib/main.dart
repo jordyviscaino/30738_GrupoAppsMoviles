@@ -9,6 +9,7 @@ import 'theme/tema_general.dart';
 import 'view/historial_view.dart';
 import 'view/home_view.dart';
 import 'view/perfil_view.dart';
+import 'view/splash_screen.dart';
 import 'viewmodel/historial_viewmodel.dart';
 import 'viewmodel/pasos_viewmodel.dart';
 import 'viewmodel/perfil_viewmodel.dart';
@@ -56,7 +57,7 @@ class MyApp extends StatelessWidget {
         child: MaterialApp(
           title: 'Contador de Pasos',
           theme: TemaGeneral.lightTheme,
-          home: const AppHome(),
+          home: const SplashNavigator(),
           debugShowCheckedModeBanner: false,
         ),
       ),
@@ -170,5 +171,30 @@ class _AppHomeState extends State<AppHome> {
         },
       ),
     );
+  }
+}
+
+class SplashNavigator extends StatefulWidget {
+  const SplashNavigator({super.key});
+
+  @override
+  State<SplashNavigator> createState() => _SplashNavigatorState();
+}
+
+class _SplashNavigatorState extends State<SplashNavigator> {
+  bool _showSplash = true;
+
+  void _completarSplash() {
+    setState(() {
+      _showSplash = false;
+    });
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    if (_showSplash) {
+      return SplashScreen(onSplashComplete: _completarSplash);
+    }
+    return const AppHome();
   }
 }
