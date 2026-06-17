@@ -6,6 +6,7 @@ import '../../widgets/atomos/indicador_carga.dart';
 import '../../widgets/atomos/mensaje_estado.dart';
 import '../../widgets/moleculas/dialogo_confirmacion.dart';
 import '../../widgets/moleculas/tarjeta_registro.dart';
+import '../../widgets/organismos/restaurante_scaffold.dart';
 
 class PedidoResumenView extends StatefulWidget {
   const PedidoResumenView({super.key});
@@ -57,17 +58,16 @@ class _PedidoResumenViewState extends State<PedidoResumenView> {
   Widget build(BuildContext context) {
     final pedidoViewModel = context.watch<PedidoViewModel>();
 
-    return Scaffold(
-      appBar: AppBar(
-        title: const Text('Resumen de pedidos'),
-        actions: [
-          IconButton(
-            tooltip: 'Actualizar',
-            onPressed: pedidoViewModel.cargarPedidos,
-            icon: const Icon(Icons.refresh_rounded),
-          ),
-        ],
-      ),
+    return RestauranteScaffold(
+      titulo: 'Resumen de pedidos',
+      seccionActual: RestauranteSeccion.pedidos,
+      actions: [
+        IconButton(
+          tooltip: 'Actualizar',
+          onPressed: pedidoViewModel.cargarPedidos,
+          icon: const Icon(Icons.refresh_rounded),
+        ),
+      ],
       body: Builder(
         builder: (context) {
           if (pedidoViewModel.isLoading) {

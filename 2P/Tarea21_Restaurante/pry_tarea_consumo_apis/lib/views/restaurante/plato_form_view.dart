@@ -6,6 +6,7 @@ import '../../viewmodels/plato_viewmodel.dart';
 import '../../widgets/atomos/boton_principal.dart';
 import '../../widgets/atomos/campo_formulario.dart';
 import '../../widgets/atomos/selector_disponibilidad.dart';
+import '../../widgets/organismos/restaurante_scaffold.dart';
 
 class PlatoFormView extends StatefulWidget {
   final Plato? plato;
@@ -104,12 +105,9 @@ class _PlatoFormViewState extends State<PlatoFormView> {
   Widget build(BuildContext context) {
     final viewModel = context.watch<PlatoViewModel>();
 
-    return Scaffold(
-      appBar: AppBar(
-        title: Text(
-          _esEdicion ? 'Editar plato' : 'Nuevo plato',
-        ),
-      ),
+    return RestauranteScaffold(
+      titulo: _esEdicion ? 'Editar plato' : 'Nuevo plato',
+      seccionActual: RestauranteSeccion.nuevoPlato,
       body: SingleChildScrollView(
         padding: const EdgeInsets.all(18),
         child: Form(
